@@ -1,0 +1,59 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+If you are using different computers to work on a project or working with other users in a collaborative 
+environment and need a centralized place to push all your changes, then a remote repository on GitHub is 
+preferred to keeping your work local.
+
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date 
+with your remote repository?
+
+If Git was constantly up to date with your remote repository, this might cause a change or modification to 
+our master branch that we don't want. By manually pulling changes, you have more control over which commits 
+you would like to pull in to your local repository.locally.should be sent to the remote repository.  
+
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks are a feauture specific to GitHub. Forking involves cloning someone else's repository 
+on GitHub onto your own GitHub account. You would use this when you would like to work on someone else's 
+repository but you don't have permission to change it. Cloning involves taking an existing repository and 
+making one just like it. You can clone a local repository onto your own computer or you can clone a repository 
+on GitHub onto your local computer as well. A branch represents an independent line of development. They are 
+a way to request a new working directory, staging area, and project history. New commits are recorded in the 
+history for the current branch, which results in a fork in the history of the project. 
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+The benefit is that you can update the local copy of the remote branch while leaving your actual local version 
+alone which can come in handy where there may be potential conflicts. Also, you can have a working copy of 
+the remote even without internet access and continue to work on your local repository. Once you are done, you can 
+merge the changes with the local remote, then you can push the changes back to GitHub whenever you regain 
+internet access. 
+
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+It would not be impossible to collaborate without using git or github. For example, I have used Dropbox in the past. 
+With dropbox, I can upload files as needed and have others review, copy and download them to their own machines. It 
+would be easier to upload as you can simply drag and drop files to Dropbox and let them upload. Downloading is just 
+as easy, often a 1-click process. Although Git/GitHub would be much harder, technically, you get the added capability 
+of having a more streamlined process of version control e.g. documenting the version control history, going back to 
+a certain stage of the project, etc.
+
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does 
+each approach have?
+
+Working/making changes solely in the master branch is definitely more simple and less work. Rather than 
+simply working and committing in the same branch, you need to pull changes into your local master branch, merge the 
+local master into your branch, then push your branch to the remote before finally merging your branch into master, either 
+locally or on GitHub.
+
+Since the master is the main branch which contains the major/correct code and updates to the project, it is best to work 
+on it in a separate branch and then bring it into master once finalized. Again, you would do this when there is 
+a new feature or code being collaborated on. Working directly in master may lead to a lot of conflicts if different 
+collaborators are all working on master and commiting their changes. Working with a separate branch keeps this process 
+separate and the master clean. 
+
