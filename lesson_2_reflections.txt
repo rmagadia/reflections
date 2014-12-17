@@ -1,0 +1,55 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a git repository, git creates a repository in the current directory that you are in. 
+You need to do this because most of the other Git commands are not available outside of an initialized 
+repository. Therefore, this is usually the first command you’ll run in a new project. 
+
+
+How is the staging area different from the working directory and the repository? What value do you think 
+it offers?
+
+Your local repository consists of three parts, the working directory, the staging area, and the head. The 
+working directory is where all of your files are stored. The head points to the latest commit you've made. 
+The staging area is an intermediate area between the working directory and the git repository. The value it 
+offers is that it allows you to review changes you have made before permanently committing them to the git 
+repository. It also allows you to group multiple files into one single commit instead of only one file per 
+commit.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can use the command "git diff" to compare what you have in the staging area and working directory. As 
+long as you beieve that this corresponds to a logical change, you can go ahead and commit it permanently.
+ 
+
+What are some situations when branches would be helpful in keeping your history organized? How would 
+branches help?
+
+A branch represents an independent line of development. They are a way to request a new working directory, 
+staging area, and project history. New commits are recorded in the history for the current branch, which 
+results in a fork in the history of the project. When you want to add a new feature or fix a bug, you can
+use a new branch to test out/fix the new feature/bug. By using a new branch, you can makes sure that 
+unstable code is never committed to the main branch.
+
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams help you visualize the branch structure by showing you where new branches start as well as give 
+you a visual representation of reachabilty. It also allows you to see see where a branch took place and all 
+of the commits on that branch and the main branch in one view.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When you merge two branches together, the changes in the current branch are incorporated into the parent 
+branch. It is represented in the diagram as such to show what commits belong to which branch.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros: Saves time
+Cons: Git cannot always resolve merge conflicts. Also, Git's automatic merging works well when lines remain 
+in the same place and multiple team members do not edit the same line. Manual merges are required to resolve 
+conflicts.
+
+
