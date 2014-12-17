@@ -1,25 +1,20 @@
-How did viewing a diff between two versions of a file help you see the bug that 
-was introduced?
+How did viewing a diff between two versions of a file help you see the bug that was introduced?   
 
-    
-
-Viewing a diff helped show me where exactly (what line) the bug was located.
+Viewing a diff helped show me where exactly (what line) the bug was located. This would be especially 
+helpful when you have a large file with thousands of line of code.
 
 
-How could having easy access to the entire history of a file make you a more 
-efficient programmer in the long term?
+How could having easy access to the entire history of a file make you a more efficient programmer in the 
+long term?
 
-     
+Having easy access to the entire history of a file would make you a more efficient programmer in the long 
+term by allowing you to access earlier versions when you are debugging or when you need to refer back to 
+earlier versions during longer projects. Also, It can make me more efficient at finding mistakes and 
+finding changes made by others to the file.
 
-Having easy access to the entire history of a file would make you a more efficient programmer in the long term by allowing you to access earlier versions when you are debugging or when you need to refer 
-back to earlier versions during longer projects.
 
-
-What do you think are the pros and cons of manually choosing when to create a 
-commit, like you do in Git, vs having versions automatically saved, like Google
-docs does?
-
-    
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, 
+vs having versions automatically saved, like Google docs does?    
 
 PROS: 
 - You can choose to create a commit at natural commiting points.
@@ -29,54 +24,33 @@ PROS:
 CONS:
 - Takes time.
 - It's not always clear when to make a commit.
+- May forget to make a commit.
 
 
-Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while 
+others, like Google Docs, treat each file separately?    
 
-    
-
-Often times, multiple files are inter-related, such as when you have a HTML, CSS, and JS file. In instances like this, it is useful to be able to save multiple files in one commit.
-
+Often times, multiple files are inter-related, such as when you have a HTML, CSS, and JS file. In instances 
+like this, it is useful to be able to save multiple files in one commit.
 
 
+How can you use the commands git log and git diff to view the history of files?    
 
-How can you use the commands git log and git diff to view the history of files?
-
-    
-
-Git log can be used to view the files within a repository located in a certain directory. Git diff can be used to compare two different files, specifically insertions and deletions.
-
-
+The command git log shows you the commit history of your repository in reverse chronological order. It has 
+commit ID, author name, date, and commit message. When you want to compare the difference between two 
+commits shown on the commit log, you can use git diff following two commit ids to view the differences 
+between those two commits, such as insertions and deletions.
 
 
-How might using version control make you more confident to make changes that 
-could break something?
+How might using version control make you more confident to make changes that could break something?    
 
-    
-
-Using version control will allow me to be liberal in the changes I make to my code since I know that I can easily return to a previous version.
+Using version control will allow me to be liberal in the changes I make to my code since I know that I can 
+easily return to a previous version that contains clean, working code.
 
 
+Now that you have your workspace set up, what do you want to try using Git for?    
+
+I would like to use Git to write new code and save various versions on my next project and hopefully be 
+able to be more liberal when it comes to trying out new code and implementing new features.
 
 
-Now that you have your workspace set up, what do you want to try using Git for?
-
-    
-
-I would like to use Git to save various versions on my next project and hopefully be able to be more liberal when it comes to trying out new code.
-
-
-Other Notes:
-- cd ~:takes you to home directory
-	- mv <file path>: moves file to home directory
-- commit: a snapshot of every file in a repository at the time the commit was made
-- repository: collection of files tracked as a cohesive unit
-- git config --global color.ui auto
-- git diff first_id second_id
-- git clone: to clone a repository
-- git log: shows commits in repository prior to current commit
-	- "q" to quit out of git log
-- git checkout: temporarily change files back to how they were at the time of the commit
-
-* C:/Program\ Files\ \(x86\)/Sublime\ Text\ 3/sublime_text.exe
